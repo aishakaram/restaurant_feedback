@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1>🍴 Restaurant Feedback</h1>
+      <form id="feedbackForm">
+        <div class="input-group">
+          <label>Food Quality</label>
+          <input type="text" id="food" placeholder="Share your thoughts..." required>
+        </div>
+
+        <div class="input-group">
+          <label>Employee Service</label>
+          <input type="text" id="employee" placeholder="Share your thoughts..." required>
+        </div>
+
+        <div class="input-group">
+          <label>Place Ambience</label>
+          <input type="text" id="place" placeholder="Share your thoughts..." required>
+        </div>
+
+        <button type="submit">Send Feedback</button>
+      </form>
+    </div>
+
+    <div class="card feedback-section">
+      <h2>📋 What People Are Saying</h2>
+      <div id="feedbackDisplay"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
